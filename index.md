@@ -122,4 +122,30 @@ The greeting zone
     </script>
   </body>
 ```
-<
+<details>
+  <summary>OUTPUT</summary>
+
+![Screencastfrom2025-01-1101-53-28-ezgif com-speed](https://github.com/user-attachments/assets/9d8560d6-5ee4-474c-9486-7ac97688138a)
+
+</details>
+
+<hr>
+
+### Breakdown code
+- Javascript
+<details>
+  <summary>
+    CODE
+  </summary>
+  
+  ```bash
+     <script>
+        const button = document.querySelector(".greet-btn");
+        button.addEventListener("click", () => {
+          const message = document.querySelector(".greet-message");
+          message.style.display = "block";
+        });
+  </script>
+```
+</details>
+

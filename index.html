@@ -9,7 +9,17 @@
     <div class="greet-container">
       <h1>Greet yourself!</h1>
       <p>Click on this button</p>
-      <button>Click</button>
+      <button class="greet-btn">Click</button>
+      <p class="greet-message" style="display:none;">Sat Shri Akaal!🙏</p>
     </div>
+
+    <script>
+      const button =  document.querySelector('.greet-btn');
+      button.addEventListener('click', ()=>{
+        const message = document.querySelector('.greet-message');
+        message.style.display='block';
+      })
+    </script>
+
   </body>
 </html>

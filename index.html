@@ -58,16 +58,28 @@ The greeting zone
         "
       >
       Sat shri akaal! Have a good day.
-
+      <button 
+      class="back-btn"
+      style="background-color: #1f1e1e;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;">Hide</button>
       </p>
     </div>
 
     <script>
       const button = document.querySelector(".greet-btn");
+      const back = document.querySelector(".back-btn");
       button.addEventListener("click", () => {
         const message = document.querySelector(".greet-message");
         message.style.display = "block";
       });
+      back.addEventListener("click", ()=>{
+        location.reload()
+      })
     </script>
   </body>
 </html>

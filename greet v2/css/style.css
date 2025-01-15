@@ -1,0 +1,47 @@
+body {
+    background-color: #1f1e1e;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .greet-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #000;
+    text-align: center;
+  }
+  
+  .greet-container h1 {
+    color: #bcbec0;
+    font-size: 50px;
+    margin: 0 0 10px;
+  }
+  
+  .greet-container p {
+    font-size: 25px;
+    color: #fff;
+    margin: 10px 0;
+  }
+  
+  .greet-btn,
+  .back-btn {
+    background-color: #1f1e1e;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .greet-message {
+    display: none;
+    font-size: 30px;
+    color: #ffffff;
+  }
+  

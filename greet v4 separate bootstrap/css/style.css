@@ -1,0 +1,84 @@
+:root {
+    --bs-primary: #0d6efd;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-dark: #212529;
+    --bs-light: #f8f9fa;
+    --bs-secondary: #6c757d;
+  }
+  
+  body {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .source-btn {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bs-warning);
+    color: var(--bs-dark);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .greet-container {
+    text-align: center;
+    background: linear-gradient(to bottom, #343a40, var(--bs-dark));
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    color: var(--bs-secondary);
+    font-size: 2.5rem;
+  }
+  
+  p {
+    font-size: 1.25rem;
+    color: var(--bs-light);
+  }
+  
+  .greet-btn {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .greet-btn:hover {
+    background-color: #0b5ed7;
+  }
+  
+  .greet-message p {
+    font-size: 1.5rem;
+  }
+  
+  .back-btn {
+    background-color: var(--bs-danger);
+    color: var(--bs-light);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .back-btn:hover {
+    background-color: #b02a37;
+  }
+  

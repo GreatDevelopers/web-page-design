@@ -1,0 +1,10 @@
+// _variables.scss
+$primary: #ff5733; // Custom primary color
+$secondary: #33ff57;
+$danger: #c90606;
+$dark: #1e293b;
+$light: #dadbdc;
+$gray: #b0a7a7;
+
+// Import Bootstrap with our custom variables
+@import "../node_modules/bootstrap/scss/bootstrap";

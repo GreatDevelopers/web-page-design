@@ -1,0 +1,30 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$font-size: 16px;
+
+@mixin button-styles {
+  padding: 10px 20px;
+  font-size: $font-size;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button {
+  @include button-styles;
+  background-color: $primary-color;
+  color: white;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+
+  &--secondary {
+    background-color: $secondary-color;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+}

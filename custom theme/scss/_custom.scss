@@ -1,0 +1,28 @@
+body{
+    background-color: $gray;
+}
+div {
+    background-color: $light;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    color: $danger;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  button{
+    background-color: $primary;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+    
+    &:hover {
+      background-color: darken($primary, 10%);
+    }
+  }
+  

@@ -1,25 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Greeting</title>
-    <link rel="stylesheet" href="./css/style.css" />
-</head>
-<body>
-    <div id="content"></div>
+    <div class="greet-container">
+      <h1>The greeting zone 🎊</h1>
+      <p>Click here to receive your greeting</p>
+      <button class="greet-btn">Greet</button>
+      <p class="greet-message">
+        Sat shri akaal! Have a good day.
+        <button class="back-btn">Hide</button>
+      </p>
+    </div>
 
-    <script>
-        fetch("index.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("content").innerHTML = data;
-            const script = document.createElement("script");
-            script.src = "./js/script.js";
-            script.defer = true;
-            document.body.appendChild(script);
-        })
-        .catch(error => console.error("Error loading content:", error));
-    </script>
-</body>
-</html>
